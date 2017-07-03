@@ -1,0 +1,10 @@
+\NewEnviron{kite}[5]{%
+  \IfStrEq{#1}{\CurrentSubject}{\item \BODY}{}
+  \IfStrEq{#2}{\CurrentSubject}{\item \BODY}{}
+  \IfStrEq{#3}{\CurrentSubject}{\item \BODY}{}
+  \IfStrEq{#4}{\CurrentSubject}{\item \BODY}{}
+  \IfStrEq{#5}{\CurrentSubject}{\item \BODY}{}
+}%
+
+  \newcommand*{\CurrentSubject}{}%
+
