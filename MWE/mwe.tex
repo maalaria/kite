@@ -1,0 +1,70 @@
+\documentclass[man, 10pt, a4paper]{scrartcl}
+
+% \usepackage{environ}
+% \usepackage{pgffor}
+% \usepackage{xstring}
+\usepackage{kite}
+
+
+
+ 
+ 
+
+  
+  
+ 
+ 
+\begin{document}
+
+
+\section{Functions}
+\foreach \Title in {Priority map, Spatial attention, Attention} {%
+  \renewcommand*{\CurrentSubject}{\Title}%
+  \subsection{\CurrentSubject}
+  \begin{itemize}
+    \input{content}
+  \end{itemize}
+}%
+\foreach \Title in {Face perception} {%
+  \renewcommand*{\CurrentSubject}{\Title}%
+  \subsection{\CurrentSubject}
+  \begin{itemize}
+    \input{content}
+  \end{itemize}
+}%
+ 
+
+
+
+
+\section{Cell types}
+\foreach \Title in {Face perception} {%
+  \renewcommand*{\CurrentSubject}{\Title}%
+  \subsection{\CurrentSubject}
+  \begin{itemize}
+    \input{content}
+  \end{itemize}
+}%
+
+
+ 
+
+
+\section{Areas}
+\foreach \Title in {Inferior temporal cortex, Lateral intraparietal area} {%
+  \renewcommand*{\CurrentSubject}{\Title}%
+  \subsection{\CurrentSubject}
+  \begin{itemize}
+    \input{content}
+  \end{itemize}
+}%
+
+
+
+
+
+\end{document}
+
+  
+   
+                  

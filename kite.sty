@@ -1,3 +1,8 @@
+\usepackage{environ}
+\usepackage{pgffor}
+\usepackage{xstring}
+
+
 \NewEnviron{kite}[5]{%
   \IfStrEq{#1}{\CurrentSubject}{\item \BODY}{}
   \IfStrEq{#2}{\CurrentSubject}{\item \BODY}{}
