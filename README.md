@@ -1,6 +1,6 @@
 # kite
 A LaTeX package to optimize note taking. Ever being annoyed by multipe
-information sources in one sentence? Use this package to automatically
+information sources in a sentence? Use this package to automatically
 distribute it.  
 
 
