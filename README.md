@@ -10,7 +10,7 @@ distribute it.
 + Topics are compiled as sections, subsection -- as you want
 + Statements are concatenated into lists
 + Currently, each statement can be assigned to five topics,
-  i.e. lists, but this can easily be adjusted to one's needs
+  i.e. lists, but this can be easily adjusted to one's needs
   
   
 *Would be nice to have*

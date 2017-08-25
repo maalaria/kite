@@ -1,18 +1,15 @@
 (TeX-add-style-hook
- "kite"
+ "test"
  (lambda ()
    (TeX-run-style-hooks
+    "latex2e"
+    "article"
+    "art10"
     "pgffor"
     "environ"
-    "keylist")
+    "filecontents")
    (TeX-add-symbols
     '("printlist" ["argument"] 1)
-    '("red" 1)
-    '("processfile" 1)
-    "kiteit"
-    "kitebf"
-    "kiteKey")
-   (LaTeX-add-environments
-    '("kite" 1)))
+    '("processfile" 1)))
  :latex)
 

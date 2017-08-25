@@ -1,8 +1,32 @@
+\documentclass{article}
+
 \usepackage{pgffor,environ}
-\usepackage{keylist}
+
+\usepackage{filecontents}
+\begin{filecontents*}{foo.tex}
+\begin{pro}{Geometry}
+Find the area of \ldots
+\end{pro}
+
+\begin{pro}{Trigonometry}
+The angle \ldots
+\end{pro}
+
+\begin{pro}{Algebra,Trigonometry}
+Prove that $x^2 + 1 = 0$ has no real solution.
+\end{pro}
+
+\begin{pro}{Geometry,Algebra}
+Find the radius \ldots
+\end{pro}
+
+\begin{pro}{Lateral intraparietal area,Saccades}
+LIP is for saccades
+\end{pro}
+\end{filecontents*}
 
 \makeatletter
-\NewEnviron{kite}[1]{%
+\NewEnviron{pro}[1]{%
   \foreach \Title in {#1} {%
     \expandafter\ifcsname c@\Title\endcsname\else% If a counter doesn't exist...
       \newcounter{\Title}%                         ... create it
@@ -27,10 +51,28 @@
   \end{#1}
 }
 
-%% COMMANDS
+\begin{document}
 
-% Commands 
-\newcommand{\kiteit}{\noexpand\textit}
-\newcommand{\kitebf}{\noexpand\textbf}
-\newcommand{\red}[1]{\textcolor{red}{#1}}
-\newcommand{\kiteKey}{\noexpand\footnotesize\hfill}
+\processfile{foo}% Process file with pro environments
+
+Algebra:
+
+\printlist{Algebra}
+
+Geometry:
+
+\printlist{Geometry}
+
+Trigonometry:
+
+\printlist{Trigonometry}
+
+Lateral intraparietal area:
+
+\printlist{Lateral intraparietal area}
+
+Saccades:
+
+\printlist{Saccades}
+
+\end{document}
