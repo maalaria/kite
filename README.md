@@ -6,13 +6,14 @@ distribute it.
 
 **Features**
 
-+ Define topics to wich a statement is assigned
-+ Topics are compiled as sections, subsection -- as you want
-+ Statements are concatenated into lists
-+ Currently, each statement can be assigned to five topics,
-  i.e. lists, but this can be easily adjusted to one's needs
-  
-  
-*Would be nice to have*
++ Create *kite* environment and pass an arbitrary number of topics as
+  arguments
++ Each topic is compiled as a sections, subsection or whatever you want –
+  to specify in the main.tex
++ The statement within the einvironment is assgined to to all of the
+  defined topics
++ The statements are concatenated into lists
++ Additionally a python script creates a list of hyperlinks below
+  each statement according to the topics, so that you can easily
+  access the affiliated topics
 
-+ Dynamic assignmend of unlimitted topics to one statement
