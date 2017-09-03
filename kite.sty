@@ -1,5 +1,6 @@
 \usepackage{pgffor,environ}
 \usepackage{keylist}
+\usepackage{ragged2e}
 
 \makeatletter
 \NewEnviron{kite}[1]{%
@@ -18,11 +19,11 @@
 
 \newcommand{\processfile}[1]{\input{#1}}
 
-\newcommand{\printlist}[2][itemize]{%
+\newcommand{\printlist}[2][justifying]{% itemize
   \expandafter\let\expandafter\listend\csname the#2\endcsname
   \begin{#1}
     \foreach \curitem in {1,...,\listend} {
-      \item \expandafter\csname #2@\curitem\endcsname
+      \expandafter\csname #2@\curitem\endcsname\par\vspace{5mm} % \item
     }
   \end{#1}
 }
@@ -34,3 +35,10 @@
 \newcommand{\kitebf}{\noexpand\textbf}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\kiteKey}{\noexpand\footnotesize\hfill}
+\newcommand{\kitecut}[2]{
+  \begin{kite}{#1}
+    #2
+   
+  \end{kite} 
+} 
+\newcommand{\kiteref}{\noexpand\hyperref}
