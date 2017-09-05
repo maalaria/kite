@@ -1,0 +1,23 @@
+\usepackage{luacode,luatexbase}
+
+%% Lua-side code
+\begin{luacode}
+function ktrf ( buff )
+	buff = string.gsub ( buff, "LATERAL INTRAPARIETAL AREA", "\\kiteref[Lateral intraparietal area]{Lateral intraparietal area}" )
+	buff = string.gsub ( buff, "INFERIOR TEMPORAL CORTEX", "\\kiteref[Inferior temporal cortex]{Inferior temporal cortex}" )
+	buff = string.gsub ( buff, "INFERIOR TEMPORAL CORTEX", "\\kiteref[Inferior temporal cortex]{Inferior temporal cortex}" )
+	buff = string.gsub ( buff, "SUPERIOR TEMPORAL SULCUS", "\\kiteref[Superior temporal sulcus]{Superior temporal sulcus}" )
+	buff = string.gsub ( buff, "FACE SELECTIVE CELLS", "\\kiteref[Face selective cells]{Face selective cells}" )
+	buff = string.gsub ( buff, "PREFRONTAL CORTEX", "\\kiteref[Prefrontal cortex]{Prefrontal cortex}" )
+	buff = string.gsub ( buff, "SPATIAL ATTENTION", "\\kiteref[Spatial attention]{Spatial attention}" )
+	buff = string.gsub ( buff, "FACE PERCEPTION", "\\kiteref[Face perception]{Face perception}" )
+	buff = string.gsub ( buff, "PRIORITY MAP", "\\kiteref[Priority map]{Priority map}" )
+	buff = string.gsub ( buff, "AMYGDALA", "\\kiteref[Amygdala]{Amygdala}" )
+return buff
+end
+\end{luacode}
+
+%% TeX-side code
+\newcommand\ktrfOn{\directlua{luatexbase.add_to_callback ( "process_input_buffer" , ktrf , "ktrf" )}}
+\newcommand\ktrfOff{\directlua{luatexbase.remove_from_callback ( "process_input_buffer" , "ktrf" )}}
+\AtBeginDocument{\ktrfOn} % turn Lua function on by default

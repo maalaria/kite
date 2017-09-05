@@ -1,7 +1,7 @@
 \usepackage{pgffor,environ}
 \usepackage{keylist}
 \usepackage{ragged2e}
-\usepackage{graphicx}
+\usepackage{hyperref}
 
 \makeatletter
 \NewEnviron{kite}[1]{%
@@ -29,9 +29,7 @@
   \end{#1}
 }
 
-%% COMMANDS
-
-% Commands 
+%% COMMANDS 
 \newcommand{\kiteit}{\noexpand\textit}
 \newcommand{\kitebf}{\noexpand\textbf}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
@@ -43,4 +41,9 @@
   \end{kite} 
 } 
 \newcommand{\kiteref}{\noexpand\hyperref}
+\newcommand{\kitesection}[1]{\section{#1}\label{#1}\printlist{#1}}
+\newcommand{\kitesubsection}[1]{\subsection{#1}\label{#1}\printlist{#1}}
+\newcommand{\kitesubsubsection}[1]{\subsubsection{#1}\label{#1}\printlist{#1}}
+\newcommand{\kiteparagraph}[1]{\paragraph{#1}\label{#1}\printlist{#1}}
+\newcommand{\kitesubparagraph}[1]{\subparagraph{#1}\label{#1}\printlist{#1}}
 

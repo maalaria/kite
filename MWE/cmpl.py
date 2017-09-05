@@ -4,7 +4,7 @@ from subprocess import call
 
 ### GENERATE KEYLIST.STY FROM MAIN.TEX
 
-with open('lit_research.tex', 'r') as cc:
+with open('main.tex', 'r') as cc:
 	content = cc.readlines()
 
 content = [x.strip() for x in content] 
@@ -15,6 +15,7 @@ for ii in range(len(content)):
     		keywords.append(content[ii][11:-1]) # append the words in \printlist environmentg
 
 keywords.sort()
+keywords.sort(key=len, reverse=True) # necessary to deal with e.g. "Memroy guided saccades" versus "Saccades"
 
 head_ = '\usepackage{luacode,luatexbase}\n\n%% Lua-side code\n\\begin{luacode}\nfunction ktrf ( buff )\n'
 foot_ = 'return buff\nend\n\\end{luacode}\n\n%% TeX-side code\n\\newcommand\ktrfOn{\directlua{luatexbase.add_to_callback ( "process_input_buffer" , ktrf , "ktrf" )}}\n\\newcommand\ktrfOff{\directlua{luatexbase.remove_from_callback ( "process_input_buffer" , "ktrf" )}}\n\AtBeginDocument{\ktrfOn} % turn Lua function on by default'
@@ -31,7 +32,7 @@ with open('keylist.sty','wb') as f:
 #### GENERATE DOCUMENT WITH LINKS (THIS ONE IS COMPILED, NOT THE ONE YOU WRITE)
 ## TODO: read all files from section that contain kite environment and process
 
-with open('./sections/neuroN.tex', 'r') as f:
+with open('./sections/section1.tex', 'r') as f:
     content = f.readlines()
     
 content = [x.strip() for x in content] 
@@ -56,13 +57,15 @@ for ii in range(len(content)):
         inserted_ = inserted_ + 1
 
 # write modified var content to file
-with open('./sections/neuroNPY.tex', 'w') as fw:
+with open('./sections/section1PY.tex', 'w') as fw:
     for item in content_:
         fw.write("%s\n" % item)
 
 
 ##### COMPILE LATEX
-call(["lualatex", "lit_research.tex"])
-call(["evince", "lit_research.pdf"])
+call(["lualatex", "main.tex"])
+#call(["biber", "lit_research.bcf"])
+#call(["lualatex", "lit_research.tex"])
+call(["evince", "main.pdf"])
 
-exit()
+
