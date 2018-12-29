@@ -59,7 +59,7 @@ Use this package to automatically distribute and connect it.
 	+ section.tex contain
 ```
 \begin{kite}{key1, key2, ...}
-		A STATEMENT
+	A STATEMENT
 \end{kite}
 ```
 formatted content
