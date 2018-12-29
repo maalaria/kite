@@ -52,7 +52,7 @@ for ii in range(len(content)): # loop over rows of the document
 keywords.sort()
 # keylist.tex for Appendix
 kk_old = " " # init kk_old
-with open('keylist.tex','wb') as f:
+with open('.keylist.tex','wb') as f:
 	for cntr, kk_ in enumerate(keywords):
 		if kk_[0].upper() != kk_old[0].upper() or cntr == 0: # if current key starts with different letter than the last
 			f.write( "\\textit{}\\\[0.2cm]\\textbf{" + kk_[0].upper() + "} \\\[0.1cm]\n" ) # make heading
@@ -67,7 +67,7 @@ foot_ = 'return buff\nend\n\\end{luacode}\n\n%% TeX-side code\n\\newcommand\ktrf
 
 
 # keylist.sty
-with open('keylist.sty','wb') as f:
+with open('.keylist.sty','wb') as f:
 	f.write( head_ )
 	for kk_ in keywords:
     		f.write('\tbuff = string.gsub ( buff, "' + kk_.upper() + '", "\\\kiteref[' + kk_ + ']{' + kk_ + '}" )\n')
@@ -75,7 +75,6 @@ with open('keylist.sty','wb') as f:
 
 
 #### GENERATE (HIDDEN) DOCUMENT CONTAINING THE  HYPERLINKS (THIS ONE IS COMPILED BY LATEX, NOT THE ONE YOU WRITE)
-## TODO: read all files from section that contain kite environment and process
 
 for s_ in sections:
 

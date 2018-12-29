@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.10.12)  23 DEC 2018 15:40
+This is LuaTeX, Version 1.0.4 (TeX Live 2017/Debian)  (format=lualatex 2018.10.12)  23 DEC 2018 20:55
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
@@ -143,9 +143,8 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks23
 )
-(./keylist.sty (/usr/share/texlive/texmf-dist/tex/lualatex/luacode/luacode.sty
+(./.keylist.sty (/usr/share/texlive/texmf-dist/tex/lualatex/luacode/luacode.sty
 Package: luacode 2012/01/23 v1.2a lua-in-tex helpers (mpg)
-
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
@@ -302,7 +301,41 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 LaTeX Warning: Unused global option(s):
     [man].
 
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `Face selective cells' multiply defined.
+
+
+LaTeX Warning: Label `Inferior temporal cortex' multiply defined.
+
+
+LaTeX Warning: Label `Superior temporal sulcus' multiply defined.
+
+
+LaTeX Warning: Label `Amygdala' multiply defined.
+
+
+LaTeX Warning: Label `Prefrontal cortex' multiply defined.
+
+
+LaTeX Warning: Label `Lateral intraparietal area' multiply defined.
+
+
+LaTeX Warning: Label `Priority map' multiply defined.
+
+
+LaTeX Warning: Label `Spatial attention' multiply defined.
+
+
+LaTeX Warning: Label `Inferior temporal cortex' multiply defined.
+
+
+LaTeX Warning: Label `Inferior temporal cortex' multiply defined.
+
+
+LaTeX Warning: Label `Face perception' multiply defined.
+
+)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -362,229 +395,45 @@ generic/fonts/otl/lmroman12-bold.luc)(load luc: /home/marius/.texlive2017/texmf-
 var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc)(load luc: /home/marius
 /.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load 
 luc: /home/marius/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8
--regular.luc)
+-regular.luc) [1
 
-LaTeX Warning: Hyper reference `Face selective cells' on page 1 undefined on inp
-ut line 22.
 
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 1 undefined on
- input line 22.
-
-
-LaTeX Warning: Hyper reference `Superior temporal sulcus' on page 1 undefined on
- input line 22.
-
-
-LaTeX Warning: Hyper reference `Amygdala' on page 1 undefined on input line 22.
-
-
-LaTeX Warning: Hyper reference `Prefrontal cortex' on page 1 undefined on input 
-line 22.
-
-
-LaTeX Warning: Hyper reference `Face selective cells' on page 1 undefined on inp
-ut line 25.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 1 undefined on
- input line 25.
-
-
-LaTeX Warning: Hyper reference `Superior temporal sulcus' on page 1 undefined on
- input line 25.
-
-
-LaTeX Warning: Hyper reference `Amygdala' on page 1 undefined on input line 25.
-
-
-LaTeX Warning: Hyper reference `Prefrontal cortex' on page 1 undefined on input 
-line 25.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 1 undefined on
- input line 25.
-
-
-LaTeX Warning: Hyper reference `Face perception' on page 1 undefined on input li
-ne 25.
-
-
-LaTeX Warning: Hyper reference `Face selective cells' on page 1 undefined on inp
-ut line 28.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 1 undefined on
- input line 28.
-
-
-LaTeX Warning: Hyper reference `Superior temporal sulcus' on page 1 undefined on
- input line 28.
-
-
-LaTeX Warning: Hyper reference `Amygdala' on page 1 undefined on input line 28.
-
-
-LaTeX Warning: Hyper reference `Prefrontal cortex' on page 1 undefined on input 
-line 28.
-
-
-LaTeX Warning: Hyper reference `Face selective cells' on page 1 undefined on inp
-ut line 31.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 1 undefined on
- input line 31.
-
-
-LaTeX Warning: Hyper reference `Superior temporal sulcus' on page 1 undefined on
- input line 31.
-
-
-LaTeX Warning: Hyper reference `Amygdala' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Hyper reference `Prefrontal cortex' on page 1 undefined on input 
-line 31.
-
-[1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Hyper reference `Face selective cells' on page 2 undefined on inp
-ut line 34.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 2 undefined on
- input line 34.
-
-
-LaTeX Warning: Hyper reference `Superior temporal sulcus' on page 2 undefined on
- input line 34.
-
-
-LaTeX Warning: Hyper reference `Amygdala' on page 2 undefined on input line 34.
-
-
-LaTeX Warning: Hyper reference `Prefrontal cortex' on page 2 undefined on input 
-line 34.
-
-
-LaTeX Warning: Hyper reference `Lateral intraparietal area' on page 2 undefined 
-on input line 37.
-
-
-LaTeX Warning: Hyper reference `Priority map' on page 2 undefined on input line 
-37.
-
-
-LaTeX Warning: Hyper reference `Spatial attention' on page 2 undefined on input 
-line 37.
-
-
-LaTeX Warning: Hyper reference `Lateral intraparietal area' on page 2 undefined 
-on input line 40.
-
-
-LaTeX Warning: Hyper reference `Priority map' on page 2 undefined on input line 
-40.
-
-
-LaTeX Warning: Hyper reference `Spatial attention' on page 2 undefined on input 
-line 40.
-
-
-LaTeX Warning: Hyper reference `Lateral intraparietal area' on page 2 undefined 
-on input line 43.
-
-
-LaTeX Warning: Hyper reference `Priority map' on page 2 undefined on input line 
-43.
-
-
-LaTeX Warning: Hyper reference `Spatial attention' on page 2 undefined on input 
-line 43.
-
-
-LaTeX Warning: Hyper reference `Face selective cells' on page 2 undefined on inp
-ut line 46.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 2 undefined on
- input line 46.
-
-
-LaTeX Warning: Hyper reference `Superior temporal sulcus' on page 2 undefined on
- input line 46.
-
-
-LaTeX Warning: Hyper reference `Amygdala' on page 2 undefined on input line 46.
-
-
-LaTeX Warning: Hyper reference `Prefrontal cortex' on page 2 undefined on input 
-line 46.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 2 undefined on
- input line 46.
-
-
-LaTeX Warning: Hyper reference `Face perception' on page 2 undefined on input li
-ne 46.
-
-
-LaTeX Warning: Hyper reference `Inferior temporal cortex' on page 2 undefined on
- input line 49.
-
-
-LaTeX Warning: Hyper reference `Face perception' on page 2 undefined on input li
-ne 49.
-
-(load luc: /home/marius/.texlive2017/texmf-var/luatex-cache/generic/fonts/otl/lm
-romanslant10-regular.luc) [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}](load luc: /home/marius/.tex
+live2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant10-regular.luc) [
+2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 50.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 50.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 50.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 50.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 4EA928CDDAB6A3C294F5BA516D916B30;820.
 
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  4EA928CDDAB6A3C294F5BA516D916B30;820.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
 )
 
 Here is how much of LuaTeX's memory you used:
- 10008 strings out of 494480
+ 10021 strings out of 494480
  100000,266212 words of node,token memory allocated
- 433 words of node memory still in use:
-   2 hlist, 1 vlist, 1 rule, 2 glue, 3 attribute, 61 glue_spec, 3 attribute_list
-, 1 write nodes
-   avail lists: 2:390,3:113,4:3,5:92,6:1307,7:325,8:13,9:69,10:2,11:163
- 13835 multiletter control sequences out of 65536+600000
+ 493 words of node memory still in use:
+   2 hlist, 1 vlist, 1 rule, 2 glue, 9 attribute, 61 glue_spec, 9 attribute_list
+, 1 write, 6 pdf_action nodes
+   avail lists: 2:386,3:140,4:3,5:92,6:1426,7:336,8:43,9:69,10:2,11:177
+ 13848 multiletter control sequences out of 65536+600000
  25 fonts using 2040375 bytes
- 47i,4n,42p,377b,331s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 47i,4n,42p,378b,331s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf/fonts/opentype/public/lm/lmromanslant10-regular.otf></usr/shar
 e/texmf/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/op
 entype/public/lm/lmroman10-regular.otf></usr/share/texmf/fonts/opentype/public/l
 m/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.o
 tf>
-Output written on main.pdf (2 pages, 23939 bytes).
+Output written on main.pdf (2 pages, 26014 bytes).
 
-PDF statistics: 74 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+PDF statistics: 165 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  25 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+ 97 words of extra memory for PDF output out of 10000 (max. 100000000)
 
