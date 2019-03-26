@@ -1,7 +1,7 @@
 ### REQUIRES PYTHON2
 
 import copy
-from subprocess import call
+import subprocess
 import sys
 
 ### DESCRIPTON
@@ -16,6 +16,7 @@ import sys
 #
 ###
 
+subprocess.call(["rm", "knowledge_collection.aux"])
 
 ### VARIABLES
 doc_name = 'main.tex'
@@ -108,10 +109,14 @@ for s_ in sections:
 		fw.write("%s\n" % item)
 
 
-##### COMPILE LATEX
-call(["lualatex", doc_name])
+##### COMPILE LATEX TO PDF AND HTML
+subprocess.call(["lualatex", doc_name])
+subprocess.call(["make4ht", "-lu", doc_name])
 if len(sys.argv) > 1 and sys.argv[1] == 'bib':
 	call(["biber", doc_name[:-4]+".bcf"])
 	call(["lualatex", doc_name])
 	print('Bib file processed')
-call(["evince", doc_name[:-4]+".pdf"])
+subprocess.call(["rm", "knowledge_collection.aux"])
+subprocess.call(["evince", doc_name[:-4]+".pdf"])
+
+
